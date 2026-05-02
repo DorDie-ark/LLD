@@ -8,24 +8,20 @@ import java.util.Scanner;
 //Main — takes user input for create type and order ID, creates correct object with new, calls deliver()
 public class FoodDeliveryApp {
     static Scanner scanner = new Scanner(System.in);
+
     static void main() {
         System.out.println("Enter a choice of Delivery (CAR,SCOOTY,BIKE)");
         String choice = scanner.nextLine();
         DeliveryPartner delivery = DeliveryFactory.create(choice);
         delivery.deliver("123");
     }
-
-
 }
 
 
-class DeliveryFactory
-{
-    static DeliveryPartner create(String type)
-    {
+class DeliveryFactory {
+    static DeliveryPartner create(String type) {
 
-        return switch (type.toUpperCase())
-        {
+        return switch (type.toUpperCase()) {
             case "BIKE" -> new BikeDelivery();
             case "CAR" -> new CarDelivery();
             case "SCOOTY" -> new ScooterDelivery();
@@ -36,13 +32,11 @@ class DeliveryFactory
 }
 
 
-interface DeliveryPartner
-{
+interface DeliveryPartner {
     void deliver(String orderId);
 }
 
-class BikeDelivery implements DeliveryPartner
-{
+class BikeDelivery implements DeliveryPartner {
 
     @Override
     public void deliver(String orderId) {
@@ -50,8 +44,7 @@ class BikeDelivery implements DeliveryPartner
     }
 }
 
-class ScooterDelivery implements DeliveryPartner
-{
+class ScooterDelivery implements DeliveryPartner {
 
     @Override
     public void deliver(String orderId) {
@@ -59,8 +52,7 @@ class ScooterDelivery implements DeliveryPartner
     }
 }
 
-class CarDelivery implements DeliveryPartner
-{
+class CarDelivery implements DeliveryPartner {
 
     @Override
     public void deliver(String orderId) {

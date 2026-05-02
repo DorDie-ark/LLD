@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstract Factory Design Pattern/Abstract Factory Design Pattern.iml" filepath="$PROJECT_DIR$/Abstract Factory Design Pattern/Abstract Factory Design Pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/GIT LLD.iml" filepath="$PROJECT_DIR$/.idea/GIT LLD.iml" />
       <module fileurl="file://$PROJECT_DIR$/Simple Factory Design Pattern/Simple Factory Design Pattern.iml" filepath="$PROJECT_DIR$/Simple Factory Design Pattern/Simple Factory Design Pattern.iml" />
     </modules>
