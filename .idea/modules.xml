@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/GIT LLD.iml" filepath="$PROJECT_DIR$/.idea/GIT LLD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simple Factory Design Pattern/Simple Factory Design Pattern.iml" filepath="$PROJECT_DIR$/Simple Factory Design Pattern/Simple Factory Design Pattern.iml" />
+    </modules>
+  </component>
+</project>
