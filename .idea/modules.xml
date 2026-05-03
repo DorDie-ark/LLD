@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstract Factory Design Pattern/Abstract Factory Design Pattern.iml" filepath="$PROJECT_DIR$/Abstract Factory Design Pattern/Abstract Factory Design Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Builder Design Pattern/Builder Design Pattern.iml" filepath="$PROJECT_DIR$/Builder Design Pattern/Builder Design Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Builder Design Pattern Chaining/Builder Design Pattern Chaining.iml" filepath="$PROJECT_DIR$/Builder Design Pattern Chaining/Builder Design Pattern Chaining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LLD-GIT.iml" filepath="$PROJECT_DIR$/.idea/LLD-GIT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simple Factory Design Pattern/Simple Factory Design Pattern.iml" filepath="$PROJECT_DIR$/Simple Factory Design Pattern/Simple Factory Design Pattern.iml" />
+    </modules>
+  </component>
+</project>
