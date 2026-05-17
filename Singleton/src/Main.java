@@ -18,7 +18,11 @@ void main() {
     EnumSingleton en1 = EnumSingleton.INSTANCE;
     EnumSingleton en2 = EnumSingleton.INSTANCE;
     System.out.println("Enum: " + (en1 == en2));
-
-
-
 }
+/**
+Eager : true
+Lazy: true
+DCL: true
+BillPugh: true
+Enum: true
+**/
