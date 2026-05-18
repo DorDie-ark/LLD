@@ -171,14 +171,14 @@ class OfficeDesktopBuilder extends IDesktopBuilder {
 
 
 class Director {
-    IDesktopBuilder desktopBuilder;
+    IDesktopBuilder builder;
 
     public Director(IDesktopBuilder desktopBuilder) {
-        this.desktopBuilder = desktopBuilder;
+        this.builder = desktopBuilder;
     }
 
     Desktop buildDesktop() {
-        return desktopBuilder.buildOs()
+        return builder.buildOs()
                 .buildRAM()
                 .buildProcessor()
                 .buildGraphicCard()
