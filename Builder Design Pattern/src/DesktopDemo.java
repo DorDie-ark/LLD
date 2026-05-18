@@ -73,45 +73,45 @@ abstract class DesktopBuilder {
         return desktop;
     }
 
-    abstract DesktopBuilder buildGraphicCard();
+    public abstract DesktopBuilder buildGraphicCard();
 
-    abstract DesktopBuilder buildStorageCard();
+    public abstract DesktopBuilder buildStorageCard();
 
-    abstract DesktopBuilder buildRAM();
+    public abstract DesktopBuilder buildRAM();
 
-    abstract DesktopBuilder buildProcessor();
+    public abstract DesktopBuilder buildProcessor();
 
-    abstract DesktopBuilder buildOs();
+    public abstract DesktopBuilder buildOs();
 }
 
 class GamingDesktopBuilder extends DesktopBuilder {
 
     @Override
-    DesktopBuilder buildGraphicCard() {
+    public DesktopBuilder buildGraphicCard() {
         build().setGraphicsCard("NVIDIA RTX 4090 24GB");
         return this;
     }
 
     @Override
-    DesktopBuilder buildStorageCard() {
+    public DesktopBuilder buildStorageCard() {
         build().setStorage("2TB NVMe SSD");
         return this;
     }
 
     @Override
-    DesktopBuilder buildRAM() {
+    public DesktopBuilder buildRAM() {
         build().setRam("64GB DDR5 6000MHz");
         return this;
     }
 
     @Override
-    DesktopBuilder buildProcessor() {
+    public DesktopBuilder buildProcessor() {
         build().setProcessor("Intel Core i9-14900K");
         return this;
     }
 
     @Override
-    DesktopBuilder buildOs() {
+    public DesktopBuilder buildOs() {
         build().setOs("Windows 11 Pro");
         return this;
     }
@@ -120,31 +120,31 @@ class GamingDesktopBuilder extends DesktopBuilder {
 class OfficeDesktopBuilder extends DesktopBuilder {
 
     @Override
-    DesktopBuilder buildGraphicCard() {
+    public DesktopBuilder buildGraphicCard() {
         build().setGraphicsCard("Intel UHD Graphics 770");
         return this;
     }
 
     @Override
-    DesktopBuilder buildStorageCard() {
+    public DesktopBuilder buildStorageCard() {
         build().setStorage("512GB SATA SSD");
         return this;
     }
 
     @Override
-    DesktopBuilder buildRAM() {
+    public DesktopBuilder buildRAM() {
         build().setRam("16GB DDR4 3200MHz");
         return this;
     }
 
     @Override
-    DesktopBuilder buildProcessor() {
+    public DesktopBuilder buildProcessor() {
         build().setProcessor("Intel Core i5-13400");
         return this;
     }
 
     @Override
-    DesktopBuilder buildOs() {
+    public DesktopBuilder buildOs() {
         build().setOs("Windows 11 Home");
         return this;
     }
