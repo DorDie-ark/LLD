@@ -8,6 +8,8 @@ public class TradingTerminalWithoutCommand {
         tradingTerminal.placeOrderButtonClick("RELIANCE", 100, 1500);
         tradingTerminal.cancelOrderButtonClick("ORD123");
         tradingTerminal.modifyOrderButtonClick("ORD124", 1600);
+        tradingTerminal.onCtrlPPressed("RELIANCE", 100, 1500);
+        tradingTerminal.runEndOfDayBatch("RELIANCE", 100, 1500);
     }
 }
 
@@ -48,5 +50,13 @@ class TradingTerminal
 
     public void modifyOrderButtonClick(String orderId, long newPrice) {
         tradingEngine.modifyOrder(orderId, newPrice);
+    }
+
+    public void onCtrlPPressed(String symbol,int qty,long price) {
+        tradingEngine.placeOrder(symbol,qty,price);
+    }
+
+    public void runEndOfDayBatch(String symbol,int qty,long price) {
+        tradingEngine.placeOrder(symbol,qty,price);
     }
 }
