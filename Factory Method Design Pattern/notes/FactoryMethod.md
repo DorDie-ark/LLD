@@ -15,10 +15,10 @@ public class PaymentController {
     Map<String, IPaymentFactory> factories;
 
     @PostMapping("/pay")
-    public double pay(@RequestParam String type, @RequestParam int amount) {
+    public double pay(@RequestParam String type, @RequestParam int price) {
         IPaymentFactory factory = factories.get(type.toLowerCase() + "PaymentFactory");
         if (factory == null) throw new IllegalArgumentException("Unknown payment type: " + type);
-        return factory.create().pay(amount);
+        return factory.create().pay(price);
     }
 }
 
